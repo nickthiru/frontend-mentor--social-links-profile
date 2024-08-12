@@ -1,0 +1,89 @@
+/*
+The _base.css file will contain the styles we'd like to import first. This will notably include the following:
+
+- Custom properties on the :root + light theme colors
+- Reset box-sizing !(* { box-sizing: border-box; })
+- Page background color
+- Body margin reset
+- Custom font (Poppins, the one we included in the previous lesson)
+- Selection color
+*/
+
+:root {
+  /* Colors */
+  --grey-700: hsl(0deg, 0%, 20%);
+  --grey-800: hsl(0deg, 0%, 12%);
+  --grey-900: hsl(0deg, 0%, 8%);
+
+  --green: hsl(75deg, 94%, 57%);
+
+  --white: hsl(0deg, 0%, 100%);
+
+  /* Spacing */
+  --space-50: 4px;
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-500: 40px;
+
+  /* Theme dependent variables */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  color: var(--white);
+  background-color: var(--grey-900);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}

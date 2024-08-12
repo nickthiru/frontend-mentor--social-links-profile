@@ -1,0 +1,30 @@
+.card {
+  width: 384px;
+  height: 611px;
+  padding: 40px;
+  border-radius: 12px;
+
+  margin-inline: auto;
+  margin-block: 100px; /* What is this for? */
+
+  background-color: var(--grey-800);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-300);
+}
+
+@media (width <= 68rem) {
+  .card {
+    width: 456px;
+  }
+}
+
+@media (width <= 34rem) {
+  .card {
+    width: 327px;
+    height: 579px;
+    padding: 24px;
+  }
+}

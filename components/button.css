@@ -1,0 +1,28 @@
+.btn {
+  width: 304px;
+  height: 45px;
+  color: var(--white);
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--grey-700);
+  transition: background-color 1s, color 1s;
+}
+
+.btn:hover {
+  color: var(--grey-700);
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+@media (width <= 68rem) {
+  .btn {
+    width: 376px;
+  }
+}
+
+@media (width <= 34rem) {
+  .btn {
+    width: 279px;
+  }
+}
