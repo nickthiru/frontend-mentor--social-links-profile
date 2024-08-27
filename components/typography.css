@@ -2,6 +2,7 @@
 
 /* text-preset-1 */
 .title {
+  font-family: var(--font);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 150%;
@@ -13,6 +14,7 @@
 
 /* text-preset-2 */
 .text {
+  font-family: var(--font);
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 150%;

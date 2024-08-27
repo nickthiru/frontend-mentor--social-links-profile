@@ -1,15 +1,7 @@
-/*
-The _base.css file will contain the styles we'd like to import first. This will notably include the following:
-
-- Custom properties on the :root + light theme colors
-- Reset box-sizing !(* { box-sizing: border-box; })
-- Page background color
-- Body margin reset
-- Custom font (Poppins, the one we included in the previous lesson)
-- Selection color
-*/
-
 :root {
+  /* Font Family */
+  --font: "Inter", system-ui, sans-serif;
+
   /* Colors */
   --grey-700: hsl(0deg, 0%, 20%);
   --grey-800: hsl(0deg, 0%, 12%);
@@ -27,7 +19,12 @@ The _base.css file will contain the styles we'd like to import first. This will 
   --space-300: 24px;
   --space-500: 40px;
 
-  /* Theme dependent variables */
+  /* Screen Size Breakpoints */
+  /* desktop: 90rem/1440px */
+  /* tablet: 68rem/1088px */
+  /* mobile: 34rem/544px */
+
+  /* Theme Dependent Variables */
 }
 
 *,
@@ -47,14 +44,9 @@ html {
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
   height: 100%;
-  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 img,
